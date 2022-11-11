@@ -50,34 +50,19 @@ r2 = r2_score(test_y, prediction)
 mse = mean_squared_error(test_y, prediction)
 print('mse: ', mse, 'r2: ', r2)
 
-weather_y1 = weather_df_num.pop('Apparent Temperature (C)')
-weather_X = weather_df_num
-train_X, test_X, train_y1, test_y1 = train_test_split(weather_X, weather_y1, test_size=0.2, random_state=4)
-model = LinearRegression()
-model.fit(train_X, train_y1)
-prediction1 = model.predict(test_X)
-np.mean((prediction - test_y1) ** 2)
-res1 = pd.DataFrame({'actual': test_y1,
-                    'prediction': prediction})
+# need to work on this part
+# weather_y1 = weather_y
+# weather_X1 = weather_X.pop('Apparent Temperature (C)')
+# train_X, test_X, train_y, test_y = train_test_split(weather_X1, weather_y1, test_size=0.2, random_state=4)
+# model = LinearRegression()
+# model.fit(train_X, train_y)
+# prediction = model.predict(test_X)
+# np.mean((prediction - test_y) ** 2)
+# res = pd.DataFrame({'actual': test_y,
+#                    'prediction': prediction})
 # print(res)
 # print("coef: ", model.coef_)
 # print("intercept: ", model.intercept_)
-r2 = r2_score(test_y1, prediction1)
-mse = mean_squared_error(test_y1, prediction1)
-print('mse: ', mse, 'r2: ', r2)
-
-weather_y2 = weather_df_num.pop('Humidity')
-weather_X = weather_df_num
-train_X, test_X, train_y2, test_y2 = train_test_split(weather_X, weather_y2, test_size=0.2, random_state=4)
-model = LinearRegression()
-model.fit(train_X, train_y2)
-prediction2 = model.predict(test_X)
-np.mean((prediction - test_y2) ** 2)
-res2 = pd.DataFrame({'actual': test_y2,
-                    'prediction': prediction})
-# print(res)
-# print("coef: ", model.coef_)
-# print("intercept: ", model.intercept_)
-r2 = r2_score(test_y2, prediction2)
-mse = mean_squared_error(test_y2, prediction2)
-print('mse: ', mse, 'r2: ', r2)
+# r2 = r2_score(test_y, prediction)
+# mse = mean_squared_error(test_y, prediction)
+# print('mse: ', mse, 'r2: ', r2)
