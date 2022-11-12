@@ -50,19 +50,3 @@ r2 = r2_score(test_y, prediction)
 mse = mean_squared_error(test_y, prediction)
 print('mse: ', mse, 'r2: ', r2)
 
-# need to work on this part
-# weather_y1 = weather_y
-# weather_X1 = weather_X.pop('Apparent Temperature (C)')
-# train_X, test_X, train_y, test_y = train_test_split(weather_X1, weather_y1, test_size=0.2, random_state=4)
-# model = LinearRegression()
-# model.fit(train_X, train_y)
-# prediction = model.predict(test_X)
-# np.mean((prediction - test_y) ** 2)
-# res = pd.DataFrame({'actual': test_y,
-#                    'prediction': prediction})
-# print(res)
-# print("coef: ", model.coef_)
-# print("intercept: ", model.intercept_)
-# r2 = r2_score(test_y, prediction)
-# mse = mean_squared_error(test_y, prediction)
-# print('mse: ', mse, 'r2: ', r2)
